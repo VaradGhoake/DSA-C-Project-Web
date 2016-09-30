@@ -1,0 +1,7 @@
+Main code is wget.c
+
+headers.h has all the header files
+calls connect.c everytime
+connect.c -- calls Domain.c
+		   htmlCreate.c
+
