@@ -1,4 +1,5 @@
-void connect(char *url){
+#include "headers.h"
+void Connect(char *url){
 
 
 	int socket_desc;
@@ -19,7 +20,6 @@ void connect(char *url){
 
 	/****************************************************Aquiring IP Address**********************************************/
 
-
 	ip = DomainToIP( url);
 	
 
@@ -37,7 +37,7 @@ void connect(char *url){
 
 	if (connect(socket_desc , (struct sockaddr *)&server , sizeof(server)) < 0){
 		puts("connect error");
-        	return 1;
+        	return;
     	}
      
  	// puts("Connected\n");
@@ -50,7 +50,7 @@ void connect(char *url){
 	message = "GET / HTTP/1.1\r\n\r\n";
 	if( send(socket_desc , message , strlen(message) , 0) < 0) {
         	puts("Send failed");
-        	return 1;
+        	return;
     	}
 	// puts("Data Send\n");
 
