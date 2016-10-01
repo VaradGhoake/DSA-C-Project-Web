@@ -1,6 +1,10 @@
 #include "headers.h"
+#include "DomainToIP.c"
+
+
 void Connect(char *url){
 
+	printf("URL : %s\n", url);
 
 	int socket_desc;
 	struct sockaddr_in server;
@@ -21,6 +25,10 @@ void Connect(char *url){
 	/****************************************************Aquiring IP Address**********************************************/
 
 	ip = DomainToIP( url);
+
+	printf("URL Resolved\n");
+
+	printf("Connecting to : %s\n", ip);
 	
 
 	/********************************************************************************************************************/
@@ -61,7 +69,16 @@ void Connect(char *url){
         	puts("recv failed");
     	}
 	// puts("Reply received\n");
-	createFile(server_reply);
+	//createFile(server_reply);
      
 	//   return 0;
 }
+
+
+/*
+//Testing
+int main(){
+	Connect("www.google.com");
+
+}
+*/
