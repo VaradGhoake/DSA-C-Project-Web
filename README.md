@@ -6,9 +6,9 @@ Created completely using **C Language**
 
 ###Requirements
 
-*Linux OS
+Linux OS
 
-*GCC compiler
+GCC compiler
 
 ###Usage
 
@@ -18,37 +18,37 @@ Created completely using **C Language**
 
 ###Options planning to implement:
 
-*--convert-links:
+--convert-links:
 
     Finds all the links in the HTML page and downloads their code
 
-*-o or --output-file
+-o or --output-file
 
-*-a or --append-output
+-a or --append-output
 
-*-q or --quiet
+-q or --quiet
 
-*-i or --input-file
+-i or --input-file
 
-*-f or --force-html
+-f or --force-html
 
-*-o or --output-document
+-o or --output-document
 
-*--backup
+--backup
 
-*--spider:
+--spider:
 
     Off-line version of it
 
-*-T ot --timeout
+-T ot --timeout
 
-*--connect-timeout
+--connect-timeout
 
-*-w or --wait
+-w or --wait
 
-*-v or --version
+-v or --version
 
-*-h or --help
+-h or --help
 
 Also various directory options and possibly proxy and (HTTP-FTP options)
 
