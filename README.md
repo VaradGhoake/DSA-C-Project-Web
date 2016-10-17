@@ -1,4 +1,4 @@
-### Lightweight Wget using Sockets
+# Lightweight Wget using Sockets
 
 Mini-project for DSA 2016-17
 
