@@ -54,7 +54,7 @@ Also various directory options and possibly proxy and (HTTP-FTP options)
 
 ###Main problem
 
-Proxy internet is the main constraint as the Connection phase is the triggering to further options
+Proxy internet is the main constraint as the Connection phase is the triggering event for further options
 
 Some of the implemented options are tested offline
 
