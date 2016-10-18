@@ -10,6 +10,10 @@
 #include <regex.h>
 
 
+int o_option;
+char o_file[10];
+int k_option;
+int q_option;
 char ipstr[INET6_ADDRSTRLEN];
 
 
