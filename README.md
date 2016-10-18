@@ -13,8 +13,8 @@ GCC compiler
 ###Usage
 
 ```
-make
-./wget [options]...[url]
+$ make
+$ ./wget [options]...[url]
 ```
 
 ###Options planning to implement:
