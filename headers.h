@@ -15,6 +15,7 @@ char ipstr[INET6_ADDRSTRLEN];
 
 
 void Usage();
+void Options();
 char* DomainToIP(char *);
 void createFile(char *, char *);
 int getopt (int, char **, char *);
