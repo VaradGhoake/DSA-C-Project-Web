@@ -19,21 +19,33 @@ $ ./wget [options]...[url]
 
 ###Options planning to implement:
 
---convert-links:
+-k or--convert-links:
+
+    Usage : currently -k is working
+    
+    Source to extract the links is in CovertLinks.c using regex
+    
+    Repeated calls to Connect.c and CreateHTML.c will do the job
 
     Finds all the links in the HTML page and downloads their code
 
--o or --output-file
+-o or --output-file:
+
+    CreateHTML call after server response is received
 
 -a or --append-output
 
 -q or --quiet
 
+
+    Create a global variable and use it as a flag before every output 
+
 -i or --input-file
 
 -f or --force-html
 
--o or --output-document
+    Using this as a default case 
+
 
 --backup
 
@@ -43,11 +55,17 @@ $ ./wget [options]...[url]
 
 -T ot --timeout
 
+    time.h 
+
 --connect-timeout
 
+    time.h
+    
 -w or --wait
 
--v or --version
+    time.h
+
+-V or --version
 
 -h or --help
 
@@ -61,7 +79,7 @@ Also various directory options and possibly proxy and (HTTP-FTP options)
 
 Proxy internet is the main constraint as the Connection phase is the triggering event for further options
 
-Some of the implemented options are tested offline
+Some of the implemented options are tested offline and they work
 
 
 
