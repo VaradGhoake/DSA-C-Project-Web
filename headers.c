@@ -60,7 +60,7 @@ char *DomainToIP(char *domain) {
 
 
 
-void createFile(char *html){
+void createFile(char *html, char *url){
 
 	FILE *fp;
 	fp = fopen("index.html", "w");
@@ -78,4 +78,23 @@ void createFile(char *html){
 void Usage(){
 	printf("\nUsage: ./wget [OPTION]... [URL]...\n");
 	return;
+}
+
+
+void Options() {
+
+
+	printf("-V\t--version\n");
+	printf("\tShows the current version of wget\n\n");
+	printf("-o [file]\t--output-file [file]\n");
+	printf("\tStore HTML in a specific file\n\n");
+	printf("-q\n");
+	printf("\tSilence the output of wget\n\n");
+	printf("-F\t--Force-HTML\n");
+	printf("\tTreat every output as HTML\n\n");
+	printf("-w\t--wait\n");
+	printf("\tWait for sometime to relieve the server load\n\n");
+	printf("-k\t--convert-links\n");
+	printf("\tDownload all the links from the HTML\n\n");
+
 }
