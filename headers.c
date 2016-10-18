@@ -6,8 +6,8 @@ char *DomainToIP(char *domain) {
 	//Variables for IP resution
 	struct addrinfo hints, *res, *p;
 	int status;
-
-	printf("Resolving URL...\n");
+	if(!q_option)
+		printf("Resolving URL...\n");
 	unsigned int retTime = time(0) + 2;
     	while (time(0) < retTime);    
 
