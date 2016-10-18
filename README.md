@@ -51,6 +51,10 @@ $ ./wget [options]...[url]
 
 -h or --help
 
+-t
+
+    tag finding feature using regex
+
 Also various directory options and possibly proxy and (HTTP-FTP options)
 
 ###Main problem
