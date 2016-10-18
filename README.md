@@ -4,11 +4,11 @@ Mini-project for DSA 2016-17
 
 Created completely using **C Language**
 
-###Requirements
+###Features used
 
-Linux OS
+Sockets
 
-GCC compiler
+Regex
 
 ###Usage
 
