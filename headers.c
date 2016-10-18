@@ -1,7 +1,7 @@
 #include "headers.h"
 
 
-char* DomainToIP(char *domain) {
+char *DomainToIP(char *domain) {
 
 	//Variables for IP resution
 	struct addrinfo hints, *res, *p;
@@ -52,6 +52,8 @@ char* DomainToIP(char *domain) {
  	       inet_ntop(p->ai_family, addr, ipstr, sizeof ipstr); 
 	       return ipstr;
     }
+	return NULL;
+
 }
 
 
@@ -70,5 +72,10 @@ void createFile(char *html){
 
 	fprintf(fp, "%s", html);
 	fclose(fp);
+	return;
+}
+
+void Usage(){
+	printf("\nUsage: ./wget [OPTION]... [URL]...\n");
 	return;
 }
