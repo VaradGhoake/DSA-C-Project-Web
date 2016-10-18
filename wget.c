@@ -15,6 +15,8 @@ int main(int argc, char *argv[]){
 		printf("\nLightweight Wget is a non-interactive network retriever.\n");		
 		Usage();
 		printf("Mandatory arguments to long options are mandatory for short options too.\n\n");
+		Options();
+
 
 		return 0;
 	}
