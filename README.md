@@ -44,7 +44,7 @@ $ ./wget [options]...[url]
 
 -i or --input-file
 
--f or --force-html
+-F or --force-html
 
     Using this as a default case 
 
