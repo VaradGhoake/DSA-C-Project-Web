@@ -10,6 +10,8 @@ Sockets
 
 Regex
 
+getopt for command line options
+
 ###Usage
 
 ```
