@@ -4,7 +4,7 @@
 int ConvertLinks () {
 
 	// regex pattern to match the "<a href" tag
-        char reginald[] = "<a href=\"[A-Z1-9a-z/.]+\"";
+        char reginald[] = "<[A-Za-z\".=]+>";
 	
 	// Variable declarations 
         regex_t rgx;
