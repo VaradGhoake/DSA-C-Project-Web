@@ -27,6 +27,10 @@ int main(int argc, char *argv[]){
 	extern char *optarg;
 	extern int optind;
 	
+	o_option = 0;
+	k_option = 0;
+	q_option = 0;
+
 
 	while (1) {
 	
@@ -42,7 +46,9 @@ int main(int argc, char *argv[]){
           			break;
 
         		case 'o':
-          			printf("option o with value `%s'\n", optarg);
+				o_option = 1;
+				strcpy(o_file, optarg);
+          			//printf("option o with value `%s'\n", optarg);
           			break;
 
         		case 'a':
@@ -50,7 +56,8 @@ int main(int argc, char *argv[]){
           			break;
 
 			case 'q':
-          			printf("\nQuiet mode on\n");
+				q_option = 1;
+          			//printf("\nQuiet mode on\n");
           			break;
 			
 			case 'i':
@@ -58,7 +65,7 @@ int main(int argc, char *argv[]){
           			break;
 
 			case 'k':
-          			
+          			k_option = 1;
           			break;
 
 			case 'w':
