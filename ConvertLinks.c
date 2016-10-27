@@ -31,7 +31,7 @@ int ConvertLinks(char *url) {
 	if(!q_option)
 		printf("\nUsing offline available HTML file \"index.html\"\n");
 
-	fp = fopen("index.html", "r");
+	fp = fopen("example.html", "r");
 	char *link_start;
 
         char mainString[256];
