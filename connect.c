@@ -14,6 +14,8 @@ void Connect(char *url){
 	char *ip;
      	ip = NULL;
 
+	//strcpy(url, "www.google.co.in/?gfe_rd=cr&amp;ei=nd0RWIvfB5PT8ge36JrYCw&gws_rd=ssl");
+
 	//Creating a socket
 	socket_desc = socket(AF_INET , SOCK_STREAM , 0);
 	if (socket_desc == -1) {
@@ -70,6 +72,8 @@ void Connect(char *url){
     	}
 
 	// puts("Reply received\n");
+	printf("HTML saved to a file\n");
+
 	if(o_option)
 		strcpy(url, o_file);
 	else
@@ -85,7 +89,6 @@ void Connect(char *url){
      
 	return;
 }
-
 
 
 
