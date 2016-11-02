@@ -1,4 +1,4 @@
-# Lightweight Wget using Sockets
+# HTTP Wget using Sockets
 
 Mini-project for DSA 2016-17
 
@@ -19,7 +19,12 @@ $ make
 $ ./wget [options]...[url]
 ```
 
-###Options planning to implement:
+###Options implemented:
+
+-r:
+
+    Most important feature of wget 
+    recursive download
 
 -k or--convert-links:
 
@@ -49,39 +54,31 @@ $ ./wget [options]...[url]
     Using this as a default case 
 
 
---backup
-
---spider:
-
-    Off-line version of it
-
--T ot --timeout
-
-    time.h 
-
---connect-timeout
-
-    time.h
-    
--w or --wait
-
-    time.h
-
 -V or --version
 
 -h or --help
 
--t
 
-    tag finding feature using regex
 
-Also various directory options and possibly proxy and (HTTP-FTP options)
+###Partially implemented and commented
+--proxy:
 
-###Main problem
+    Proxy internet is the main constraint as the Connection phase is the triggering event for further options
 
-Proxy internet is the main constraint as the Connection phase is the triggering event for further options
+    Some of the implemented options are tested offline and they work
+-k or--convert-links:
 
-Some of the implemented options are tested offline and they work
+		Usage : currently -k is working
+		Source to extract the links is in CovertLinks.c using regex
+		Repeated calls to Connect.c and CreateHTML.c will do the job
+
+		Finds all the links in the HTML page and downloads their code
+
+
+
+	SSL:
+
+		For HTTPS, able to download the certificates necessary
 
 
 
